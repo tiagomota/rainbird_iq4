@@ -1,0 +1,82 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RainBird IQ4",
+        "description": "Sign in with your RainBird IQ4 cloud account.",
+        "data": {
+          "email": "Email",
+          "password": "[%key:common::config_flow::data::password%]"
+        },
+        "data_description": {
+          "email": "The email address for your RainBird IQ4 cloud account."
+        }
+      },
+      "select_controller": {
+        "title": "Select controller",
+        "description": "Choose the controller to set up. Add the integration again for additional controllers.",
+        "data": {
+          "controller_id": "Controller"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Please re-enter your RainBird IQ4 password.",
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "no_controllers": "No controllers found for this account.",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "connected": {
+        "name": "Connected"
+      },
+      "irrigation_active": {
+        "name": "Irrigation active"
+      }
+    },
+    "button": {
+      "stop_all_irrigation": {
+        "name": "Stop running irrigation"
+      }
+    },
+    "number": {
+      "rain_delay": {
+        "name": "Rain delay"
+      },
+      "forecast_probability": {
+        "name": "Forecast rain probability threshold"
+      },
+      "forecast_delay_days": {
+        "name": "Forecast skip days"
+      }
+    },
+    "select": {
+      "forecast_rain_amount": {
+        "name": "Forecast rain amount threshold"
+      }
+    },
+    "sensor": {
+      "rain_delay": {
+        "name": "Rain delay"
+      }
+    },
+    "switch": {
+      "forecast_delay": {
+        "name": "Forecast delay"
+      }
+    }
+  }
+}

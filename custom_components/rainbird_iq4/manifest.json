@@ -1,0 +1,19 @@
+{
+  "domain": "rainbird_iq4",
+  "name": "RainBird IQ4",
+  "codeowners": [
+    "@tiagomota"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/tiagomota/ha-rainbird-iq4",
+  "issue_tracker": "https://github.com/tiagomota/ha-rainbird-iq4/issues",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "loggers": [
+    "pyiq4"
+  ],
+  "requirements": [
+    "pyiq4>=0.1.2"
+  ],
+  "version": "0.1.0"
+}

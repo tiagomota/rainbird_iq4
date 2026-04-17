@@ -1,0 +1,82 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RainBird IQ4",
+        "description": "Sign in with your RainBird IQ4 cloud account.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        },
+        "data_description": {
+          "email": "The email address for your RainBird IQ4 cloud account."
+        }
+      },
+      "select_controller": {
+        "title": "Select controller",
+        "description": "Choose the controller to set up. Add the integration again for additional controllers.",
+        "data": {
+          "controller_id": "Controller"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Please re-enter your RainBird IQ4 password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid authentication",
+      "cannot_connect": "Failed to connect",
+      "no_controllers": "No controllers found for this account.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This controller is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "entity": {
+    "button": {
+      "stop_all_irrigation": {
+        "name": "Stop running irrigation"
+      }
+    },
+    "binary_sensor": {
+      "connected": {
+        "name": "Connected"
+      },
+      "irrigation_active": {
+        "name": "Irrigation active"
+      }
+    },
+    "sensor": {
+      "rain_delay": {
+        "name": "Rain delay"
+      }
+    },
+    "number": {
+      "rain_delay": {
+        "name": "Rain delay"
+      },
+      "forecast_probability": {
+        "name": "Forecast rain probability threshold"
+      },
+      "forecast_delay_days": {
+        "name": "Forecast skip days"
+      }
+    },
+    "select": {
+      "forecast_rain_amount": {
+        "name": "Forecast rain amount threshold"
+      }
+    },
+    "switch": {
+      "forecast_delay": {
+        "name": "Forecast delay"
+      }
+    }
+  }
+}
